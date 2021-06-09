@@ -12,13 +12,13 @@ public class App
   @Test
   public static void main() {
 	
-	  System.setProperty("webdriver.chrome.driver","chromedriver.exe"); 
+	  System.setProperty("webdriver.chrome.driver","/home/edureka/workspace/'php website'/chromedriver.exe"); 
 	  ChromeOptions chromeOptions = new ChromeOptions(); 
 	  chromeOptions.addArguments("--headless"); 
 	  chromeOptions.addArguments("--no-sandbox"); 
 	  WebDriver driver = new ChromeDriver(chromeOptions); 
 	  chromeOptions.addArguments("--headless"); 
-	  driver.get("http://3.83.128.111:8082"); 
+	  driver.get("http://18.208.178.32:8082"); 
 	  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS); 
 	  driver.findElement(By.id("About Us")).click(); 
 	  String actualText = driver.findElement(By.id("PID-ab2-pg")).getText(); 
