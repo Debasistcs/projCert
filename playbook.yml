@@ -1,5 +1,5 @@
 ---
-- name: Copy selenium webdriver
+- name: Playbook to copy webdriver & modify /etc/hosts
   hosts: all
   become: true
   tasks:
@@ -7,3 +7,11 @@
      copy:
       src: /home/edureka/chromedriver.exe
       dest: /home/edureka
+
+   - name: To make entry in /etc/hosts file
+     shell: |
+          echo "172.31.81.122 puppetmaster puppet" >> /etc/hosts
+          echo "172.31.86.231 puppetclient" >> /etc/hosts
+          exit 0
+
+   
