@@ -1,0 +1,9 @@
+---
+- name: Copy selenium webdriver
+  hosts: all
+  become: true
+  tasks:
+   - name: To copy selenium webdriver to slave node
+     copy:
+      src: /home/edureka/chromedriver.exe
+      dest: /home/edureka
