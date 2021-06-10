@@ -10,8 +10,9 @@
 
    - name: To make entry in /etc/hosts file
      shell: |
-          echo "172.31.81.122 puppetmaster puppet" >> /etc/hosts
-          echo "172.31.86.231 puppetclient" >> /etc/hosts
+          echo "172.31.26.165 puppetmaster puppet" >> /etc/hosts
+          echo "172.31.23.14 puppetclient" >> /etc/hosts
           exit 0
+
 
    
