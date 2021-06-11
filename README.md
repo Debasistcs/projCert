@@ -10,4 +10,7 @@ driver.get("http://3.83.128.111:8082");
 # Puppet manifest file
 site.pp
 
+# Ansible playbook
+playbook.yml
+
 
