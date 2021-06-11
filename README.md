@@ -5,7 +5,10 @@
 /home/edureka/gechodriver
 
 # Selenium jar file
-selenium.jar file is for firefox
+This selenium.jar file is for firefox
+
+# Selenium java code
+Both .java file in this repository
 
 # pom.xml
 Use this pom.xml file to build selenium jar file. All dependencies will be resolved
