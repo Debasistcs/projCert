@@ -25,7 +25,7 @@ Job2
 Job3
 ---
 
-sudo /opt/puppetlabs/bin/puppet agent -t
+/opt/puppetlabs/bin/puppet agent -t
 
 =========================================================
 
