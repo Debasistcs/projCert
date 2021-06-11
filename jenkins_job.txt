@@ -17,8 +17,8 @@ sudo systemctl start puppet
 
 Job2
 ----
-puppet ssl bootstrap
-puppet ssl show
+/opt/puppetlabs/bin/puppet ssl bootstrap
+/opt/puppetlabs/bin/puppet ssl show
 
 =========================================================
 
