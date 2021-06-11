@@ -1,0 +1,52 @@
+## Shell cammands to be placed in "Execute shell" in build steps in mentioned Job#
+
+
+Job1
+----
+
+sudo wget https://apt.puppet.com/puppet7-release-focal.deb
+sudo apt-get update
+sudo apt-get install -y puppet-agent
+export PATH=/opt/puppetlabs/bin:$PATH
+puppet config set server puppet --section main
+sleep 10s
+sudo systemctl start puppet
+puppet ssl bootstrap
+
+=========================================================
+
+Job2
+----
+
+sudo /opt/puppetlabs/bin/puppetserver ca sign --all
+
+=========================================================
+
+Job3
+---
+
+sudo /opt/puppetlabs/bin/puppet agent -t
+
+=========================================================
+
+Job4
+----
+
+cd /home/edureka/workspace/'Job4 php deploy'
+sudo docker stop php_website
+sudo docker rm php_website
+sudo docker build -t php:v1 .
+sudo docker run -d --name php_website -p 8082:80 php:v1
+sleep 10s
+sudo chmod +x selenium.jar
+java -jar selenium.jar
+
+=========================================================
+
+Job5
+----
+
+sudo docker stop php_website
+sudo docker rm php_website
+
+=========================================================
