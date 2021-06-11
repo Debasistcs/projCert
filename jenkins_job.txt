@@ -11,14 +11,14 @@ export PATH=/opt/puppetlabs/bin:$PATH
 puppet config set server puppet --section main
 sleep 10s
 sudo systemctl start puppet
-puppet ssl bootstrap
+
 
 =========================================================
 
 Job2
 ----
-
-sudo /opt/puppetlabs/bin/puppetserver ca sign --all
+puppet ssl bootstrap
+puppet ssl show
 
 =========================================================
 
