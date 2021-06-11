@@ -5,7 +5,7 @@
   tasks:
    - name: To copy selenium webdriver to slave node
      copy:
-      src: /home/edureka/chromedriver.exe
+      src: /home/edureka/geckodriver
       dest: /home/edureka
 
    - name: To make entry in /etc/hosts file
