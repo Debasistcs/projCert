@@ -12,7 +12,7 @@ public class App
   @Test
   public static void main() {
 	
-	  System.setProperty("webdriver.chrome.driver","/home/edureka/workspace/'php website'/chromedriver.exe"); 
+	  System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver.exe"); 
 	  ChromeOptions chromeOptions = new ChromeOptions(); 
 	  chromeOptions.addArguments("--headless"); 
 	  chromeOptions.addArguments("--no-sandbox"); 
