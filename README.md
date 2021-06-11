@@ -7,4 +7,7 @@ driver.get("http://3.83.128.111:8082");
 # Location of webdriver
 /home/edureka/chromedriver.exe
 
+# Puppet manifest file
+site.pp
+
 
