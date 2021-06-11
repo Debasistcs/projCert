@@ -16,6 +16,9 @@ site.pp
 # Ansible playbook
 playbook.yml
 
+# Dockerfile name
+Dockerfile
+
 
 
 
